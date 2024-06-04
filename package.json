@@ -1,0 +1,23 @@
+{
+  "name": "mpsdk-webcomponent-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ItsChrisHickman/mpsdk-webcomponent-test.git",
+  "author": "Chris Hickman <chrishickman@matterport.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "webpack serve --mode=development",
+    "build": "webpack",
+    "postinstall": "yarn matterport-assets static"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "@matterport/webcomponent": "^0.1.39",
+    "three": "0.160"
+  }
+}
