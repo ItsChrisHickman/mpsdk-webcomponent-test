@@ -1,8 +1,9 @@
 import "@matterport/webcomponent";
 
-const viewer = document.getElementById("mp");
+let viewer = document.getElementById("mp");
+let mpSdk;
 viewer.addEventListener('mpSdkPlaying', evt => {
-  const mpSdk = evt.detail.mpSdk;
+  mpSdk = evt.detail.mpSdk;
   console.log(mpSdk);
 
   const changeSpaceButton = document.createElement("button");
@@ -18,8 +19,11 @@ viewer.addEventListener('mpSdkPlaying', evt => {
 
   changeSpaceButton.addEventListener("click", async function () {
     console.log("Disconnect");
-    mpSdk.disconnect();
+    await mpSdk.disconnect();
+    viewer.remove();
+    console.log("Create new element");
+    viewer = document.createElement("matterport-viewer")
     console.log("Swap Model ID");
-    document.getElementById("mp").setAttribute("m", "pZxkv5eVgWG");
+    viewer.setAttribute("m", "pZxkv5eVgWG");
   });
 });
