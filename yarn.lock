@@ -84,10 +84,10 @@
   dependencies:
     "@lit-labs/ssr-dom-shim" "^1.0.0"
 
-"@matterport/webcomponent@^0.1.42":
-  version "0.1.42"
-  resolved "https://registry.yarnpkg.com/@matterport/webcomponent/-/webcomponent-0.1.42.tgz#e9bb72b8eb157a24516e565b8ee615c7d1f33ae9"
-  integrity sha512-Aa3aSObYxiuzhbAbib18YkiXHCp410ExiGkJuVpNSav3AWlkulvuG+lACY+RtQuAB51SXgT5n/1m+1Dd6FT3kA==
+"@matterport/webcomponent@^0.1.43":
+  version "0.1.43"
+  resolved "https://registry.yarnpkg.com/@matterport/webcomponent/-/webcomponent-0.1.43.tgz#17b747dbe1043e143994cd73e71ff05578ba0f79"
+  integrity sha512-6ZYa2SfZGVbkNZvm7RjZC71wzGF0O8NwtzHlkQdo8zdjkx2cueFuHFbvoG6nLhl427jtS1OlAVWUsQQF9/Mx/w==
   dependencies:
     lit "^2.4.1"
 
